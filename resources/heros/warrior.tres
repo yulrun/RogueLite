@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Hero" load_steps=4 format=3 uid="uid://cdwlmb0kg6yqy"]
+
+[ext_resource type="Resource" uid="uid://4ahf0jcajgrh" path="res://resources/unlock/ability_unlock/axe.tres" id="1_epv5u"]
+[ext_resource type="Script" path="res://resources/heros/hero.gd" id="1_jfdsw"]
+[ext_resource type="Resource" uid="uid://c1mmaf7pgtqtv" path="res://resources/unlock/ability_unlock/sword.tres" id="3_0tdab"]
+
+[resource]
+script = ExtResource("1_jfdsw")
+name = "Warrior"
+base_health = 100
+base_speed = 90
+starting_ability = ExtResource("3_0tdab")
+ability_list = Array[Resource("res://resources/unlock/ability_unlock/ability_unlock.gd")]([ExtResource("1_epv5u")])

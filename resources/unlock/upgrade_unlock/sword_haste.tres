@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeUnlock" load_steps=2 format=3 uid="uid://d3f7bitvrykdj"]
+
+[ext_resource type="Script" path="res://resources/unlock/upgrade_unlock/upgrade_unlock.gd" id="1_706p3"]
+
+[resource]
+script = ExtResource("1_706p3")
+value = 7.5
+id = "sword_haste"
+max_quantity = 5
+rarity = 0
+name = "Haste"
+description = "Increase the Attack Speed of the Sword Ability!"

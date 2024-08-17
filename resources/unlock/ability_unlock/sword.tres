@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityUnlock" load_steps=3 format=3 uid="uid://c1mmaf7pgtqtv"]
+
+[ext_resource type="PackedScene" uid="uid://rsk687fbwa65" path="res://scenes/abilities/sword_ability_controller.tscn" id="1_hqxwg"]
+[ext_resource type="Script" path="res://resources/unlock/ability_unlock/ability_unlock.gd" id="2_xrg6v"]
+
+[resource]
+script = ExtResource("2_xrg6v")
+ability_controller_scene = ExtResource("1_hqxwg")
+base_damage = 5.0
+base_crit_rate = 0.0
+base_crit_damage = 0.0
+id = "ability_sword"
+max_quantity = 1
+rarity = 0
+name = "Sword"
+description = "A swining sword ability!"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityUnlock" load_steps=3 format=3 uid="uid://4ahf0jcajgrh"]
+
+[ext_resource type="PackedScene" uid="uid://b0e0g1ju6tdwr" path="res://scenes/abilities/axe_ability_controller.tscn" id="1_bcj13"]
+[ext_resource type="Script" path="res://resources/unlock/ability_unlock/ability_unlock.gd" id="2_qna45"]
+
+[resource]
+script = ExtResource("2_qna45")
+ability_controller_scene = ExtResource("1_bcj13")
+base_damage = 10.0
+base_crit_rate = 0.0
+base_crit_damage = 0.0
+id = "ability_axe"
+max_quantity = 1
+rarity = 0
+name = "Axe"
+description = "A swirling axe ability that will periodically spawn an axe at the player's location spiralling outwards."

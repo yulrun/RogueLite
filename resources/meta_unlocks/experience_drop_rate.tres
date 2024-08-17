@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MetaUnlock" load_steps=2 format=3 uid="uid://dagaw4j5kt862"]
+
+[ext_resource type="Script" path="res://resources/meta_unlocks/meta_unlock.gd" id="1_nvy4p"]
+
+[resource]
+script = ExtResource("1_nvy4p")
+id = "experience_drop_rate"
+max_quanitty = 1
+value = 10.0
+title = "Experience Drop Rate"
+description = "Increases experience drop rate by {value}."
