@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcppxrglultom"]
+
+[ext_resource type="Script" path="res://scenes/managers/crosshair_manager.gd" id="1_8q381"]
+[ext_resource type="Texture2D" uid="uid://bfhac1pat8ujy" path="res://scenes/managers/crosshair.png" id="1_62lvp"]
+
+[node name="CrosshairManager" type="Node"]
+script = ExtResource("1_8q381")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Crosshair" type="Sprite2D" parent="Node2D"]
+z_index = 100
+texture = ExtResource("1_62lvp")

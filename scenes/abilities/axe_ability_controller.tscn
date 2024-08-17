@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0e0g1ju6tdwr"]
+
+[ext_resource type="Script" path="res://scenes/abilities/axe_ability_controller.gd" id="1_qmi21"]
+[ext_resource type="PackedScene" uid="uid://b2qocdgforico" path="res://scenes/abilities/axe_ability.tscn" id="2_l7lg4"]
+[ext_resource type="Resource" uid="uid://bwqld7m3tk0t3" path="res://resources/unlock/upgrade_unlock/axe_damage.tres" id="3_juwek"]
+
+[node name="AxeAbilityController" type="Node"]
+script = ExtResource("1_qmi21")
+axe_ability_scene = ExtResource("2_l7lg4")
+unlock_list = Array[Resource("res://resources/unlock/upgrade_unlock/upgrade_unlock.gd")]([ExtResource("3_juwek")])
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.5
+autostart = true

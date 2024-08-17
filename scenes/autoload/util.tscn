@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://co6t8p0dn37la"]
+
+[ext_resource type="Script" path="res://scenes/autoload/util.gd" id="1_4byfk"]
+[ext_resource type="PackedScene" uid="uid://vxa6gr0hd6lv" path="res://scenes/ui/floating_text.tscn" id="2_pycpr"]
+
+[node name="Util" type="Node"]
+script = ExtResource("1_4byfk")
+floating_text_scene = ExtResource("2_pycpr")

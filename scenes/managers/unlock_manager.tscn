@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://csp8gh328q8vn"]
+
+[ext_resource type="Script" path="res://scenes/managers/unlock_manager.gd" id="1_mw571"]
+[ext_resource type="Resource" uid="uid://cp1fhxsqk1bt5" path="res://resources/unlock/upgrade_unlock/player_speed.tres" id="3_evkgu"]
+[ext_resource type="PackedScene" uid="uid://b31ms1itjntf8" path="res://scenes/ui/unlock_screen_ui.tscn" id="4_wbj0j"]
+
+[node name="UnlockManager" type="Node" groups=["unlock_manager"]]
+script = ExtResource("1_mw571")
+unlock_screen_scene = ExtResource("4_wbj0j")
+player_upgrade_unlocks = Array[Resource("res://resources/unlock/upgrade_unlock/upgrade_unlock.gd")]([ExtResource("3_evkgu")])

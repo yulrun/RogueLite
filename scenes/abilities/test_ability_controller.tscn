@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bln0nom2skhhl"]
+
+[ext_resource type="Script" path="res://scenes/abilities/test_ability_controller.gd" id="1_mm8xl"]
+
+[node name="TestAbilityController" type="Node"]
+script = ExtResource("1_mm8xl")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true

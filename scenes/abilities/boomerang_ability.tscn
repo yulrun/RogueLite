@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3tv0xl4bbblp"]
+
+[ext_resource type="Script" path="res://scenes/abilities/boomerang_ability.gd" id="1_nltbg"]
+[ext_resource type="Texture2D" uid="uid://ckxyxg6uvw0xe" path="res://assets/sprites/boomerang.png" id="2_uehwj"]
+[ext_resource type="PackedScene" uid="uid://bx5frp6ouk0mn" path="res://scenes/components/hitbox_component.tscn" id="3_bs7s1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dt00p"]
+
+[node name="BoomerangAbility" type="Node2D"]
+script = ExtResource("1_nltbg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_uehwj")
+
+[node name="HitboxComponent" parent="." instance=ExtResource("3_bs7s1")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+shape = SubResource("CircleShape2D_dt00p")
